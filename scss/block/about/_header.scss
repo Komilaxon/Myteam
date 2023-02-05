@@ -1,0 +1,70 @@
+#site-header{
+    padding-top: 77px;
+}
+
+.site-header__logo{
+    max-width: 159px;
+    margin-right: 80px;
+}
+
+.site-header__list{
+    display: flex;
+    align-items: center;
+}
+
+.site-header__item + .site-header__item{
+    margin-left: 40px;
+}
+.site-header__link{
+    @include text;
+}
+
+.site-header__btn{
+    @include btn;
+    max-width: 160px;
+    margin-left: auto;
+}
+
+.site-header__container{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.site__header__block{
+    display: flex;
+    align-items:center;
+}
+
+.header__menu{
+   width: 20px;
+   height: 20px;
+   border: none;
+   background-color: transparent;
+   background-image: url(../../img/humburger.svg);
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+
+.header__menu{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+    .site-header__logo{
+        max-width: 127px;
+    }
+}       
+
+@media only screen and (max-width:600px){
+    .header__menu{
+        display: inline-block;
+    }
+
+    .site-header__btn{
+        display: none;
+    }
+    .site-header__list{
+        display: none;
+    }
+}  
